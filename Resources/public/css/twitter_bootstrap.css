@@ -1,0 +1,164 @@
+/* Стили общего контейнера */
+.jp-audio
+{
+	font-size:1.25em; /* 1.25em for testing in site pages */ /* No parent CSS that can effect the size in the demos ZIP */
+
+	line-height:1.6;
+    color: #666666;
+    width: 330px;
+}
+
+.jp-interface
+{
+	position: relative;
+	width:100%;
+}
+
+.jp-audio .jp-type-single .jp-interface
+{
+    height: 25px;
+}
+
+/* Стили контейнера кнопок воспроизведения */
+.jp-controls-holder
+{
+	clear: both;
+	width:440px;
+	margin:0 auto;
+	position: relative;
+	overflow:hidden;
+	top:-8px; /* This negative value depends on the size of the text in jp-currentTime and jp-duration */
+}
+
+.jp-interface .jp-controls
+{
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	overflow:hidden;
+}
+
+.jp-audio .jp-controls
+{
+	width: 380px;
+}
+
+.jp-interface .jp-controls li
+{
+	display:inline;
+	float: left;
+}
+
+.jp-interface .jp-controls a
+{
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+}
+
+/* Стили полосы воспроизведения */
+.jp-progress
+{
+	overflow:hidden;
+	background-color: #DDDDDD;
+}
+
+.jp-audio .jp-progress
+{
+	position: absolute;
+    height: 7px;
+    top: 5px;
+}
+
+.jp-audio .jp-type-single .jp-progress
+{
+    left: 35px;
+	width:186px;
+}
+
+.jp-seek-bar
+{
+    background-color: #999999;
+	width:0px;
+	height:100%;
+	cursor: pointer;
+}
+
+.jp-play-bar
+{
+	background-color: #000000;
+	width:0px;
+	height:100%;
+	cursor: pointer;
+}
+
+/* Стили контейнера для вывода времени */
+.jp-audio .jp-time-holder
+{
+	position:absolute;
+	top: 12px;
+}
+
+.jp-audio .jp-type-single .jp-time-holder
+{
+	width:186px;
+    left: 35px;
+}
+
+.jp-current-time,
+.jp-duration
+{
+	width:60px;
+	font-size:.64em;
+}
+
+.jp-current-time
+{
+	float: left;
+	display:inline;
+}
+
+.jp-duration
+{
+	float: right;
+	display:inline;
+	text-align: right;
+}
+
+/* Стили полосы управления звуком*/
+.jp-volume-bar
+{
+	position: absolute;
+	overflow:hidden;
+	width:46px;
+	height:5px;
+	cursor: pointer;
+}
+
+.jp-audio .jp-volume-bar
+{
+    background-color: #DDDDDD;
+    left: 245px;
+    top: 6px;
+}
+
+.jp-volume-bar-value
+{
+    background-color: #000000;
+	width:0px;
+	height:5px;
+    left: 55px;
+    top: 12px;
+}
+
+/* Стили кнопок громкости */
+.jp-audio .jp-type-single .jp-mute,
+.jp-audio .jp-type-single .jp-unmute
+{
+    margin-left: 200px;
+}
+
+.jp-audio .jp-volume-max
+{
+    margin-left: 56px;
+}

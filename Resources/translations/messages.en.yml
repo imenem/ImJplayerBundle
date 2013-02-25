@@ -1,0 +1,25 @@
+player:
+    # Desc: Max volume
+    max_volume: Max volume
+
+    # Desc: Mute
+    mute: Mute
+
+    # Desc: Pause playback
+    pause: Pause
+
+    # Desc: Start playback
+    play: Play
+
+    # Desc: Stop playback
+    stop: Stop
+
+    # Desc: Unmute
+    unmute: Unmute
+
+    update_required:
+        # Desc: Update required message
+        message: Update required
+
+        # Desc: Update required title
+        title: 'To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.'
